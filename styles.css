@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom right, rgb(90, 90, 235), rgb(136, 136, 215));
+}
+.container{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(16, 16, 16);
+}
+.space{
+    width: 60%;
+    background: rgba(214, 207, 207, 0.822);
+    font-family: sans-serif;
+}
+.top-part{
+    text-align: center;
+    height: 50px;   
+    border-radius: 10px 10px 0 0;
+    padding: 14px;
+}
+.top-part h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.bottom-part{
+    margin-top: 3px;
+    border-radius: 0 0 10px 10px;
+    height: 150px;
+    padding: 20px 15px;
+}
+.msg-btn-input{
+    display: flex;
+    margin:0
+}
+.caption{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    
+}
+.message-btn{
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgba(214, 207, 207, 0.822);
+    color: rgb(132, 101, 101);
+    cursor: pointer;
+}
+.message-btn:hover{
+    background-color:  rgb(136, 136, 215);
+}
+#message-input{
+    width: 92%;
+    border: 1px solid rgba(214, 207, 207, 0.822);
+    height: 32px;
+    border-left-width: 2px;
+    border-radius: 0 5px 5px 0;
+}
+.btn-container{
+    text-align: center;
+}
+button[type="submit"]{
+    margin-top: 20px;
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(214, 207, 207, 0.822);
+    background-color: rgb(178, 178, 227);
+    font-size: 15px;
+}
+button[type="submit"]:hover{
+    background-color: rgb(136, 136, 215);
+}
+#message-output{
+    text-align: center;
+    font-size: 1.1em;
+    
+}
+@media(max-width:500px){
+    .container{
+        width: 90%;
+    }
+    .top-part h2{
+        font-size: 16px;
+    }
+    .caption{
+        font-size: .9em;
+    }
+    button[type="submit"]{
+        font-size: 12px ;
+    }
+    #message-output{
+        font-size: .9em;
+        
+    }
+}   
